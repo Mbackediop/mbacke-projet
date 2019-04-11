@@ -1,4 +1,5 @@
 import random
+import sys
 val_secret = random.randint(0,9)
 print(val_secret)
 answer = None
@@ -13,3 +14,5 @@ for i in range(3):
         print("val-secret est superieur a la valeur donner \n")
     else:
         print("bravo, vous avez gagner")
+        sys.exit()
+        print("vous avez perdu")
